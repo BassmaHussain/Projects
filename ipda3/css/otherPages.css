@@ -1,0 +1,117 @@
+.navbar{
+    background-color: #b2b3b596 !important;
+    margin-bottom: 0;
+    float: none !important;
+}
+
+
+/* start all articles page */
+
+
+.all-articles-show{
+   height: auto;
+    position: relative;
+    padding-top: 80px;
+    
+}
+.all-articles-show .all-articles-content{
+    height: auto;
+     background-image: url(../images/imgs/articles.jpg);
+    background-repeat: no-repeat;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+             background-size: cover; 
+}
+.all-articles-show .all-articles-content .container{
+    padding: 50px 0;
+}
+.all-articles-show .container .row > div:not(:first-child),
+.all-Works-show .container .row > div:not(:first-child){
+    display: none;
+}
+
+/* end all articles page */
+
+/* start all works page */
+.all-Works-show{
+    padding-top: 90px;
+    height: auto;
+     background-image: url(../images/imgs/bg30-Ar1web.gif);
+    background-repeat: no-repeat;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+.all-Works-show .container{
+     
+}
+.all-Works-show .row{
+   margin-top: 140px;
+}
+.all-Works-show .container{
+    -webkit-transform: translateX(-1300px);
+    -moz-transform: translateX(-1300px);
+    -o-transform: translateX(-1300px);
+            transform: translateX(-1300px);
+}
+/* end all works page */
+
+/* breadcrumb */
+
+.breadcrumb li{
+    font-size: 30px;
+    color: #000 !important;
+} 
+.breadcrumb li:before{
+    content: "|";
+    font-size: 45px;
+    color: #3aade6; 
+    margin-left: 10px;
+}
+/* end breadcrumb */
+/**/
+
+.one-article-section{
+     padding-top: 98px;
+    padding-bottom: 50px;
+    background-image: url(../images/imgs/bg30-Ar1web.gif);
+     background-repeat: no-repeat;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+    
+    
+}
+.one-article-section .container{
+    padding-top: 130px;
+}
+.one-article-section .content{
+    background-color: #FFF;
+    width: 657px;
+    min-height: 670px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px #6b6565;
+        padding-top: 40px;
+    
+    
+    -webkit-transform: translateY(350px);
+    -moz-transform: translateY(350px);
+    -o-transform: translateY(350px);
+            transform: translateY(350px);
+}
+.one-article-section .content img{
+    width: 75%;
+    height: 200px;
+     box-shadow: 1px 1px 10px #6b6565;
+     border-radius: inherit;
+       margin-bottom: 37px;
+}
+.one-article-section .content p{
+        margin: 20px;
+    font-size: 18px;
+    line-height: 1.7;
+    
+}
