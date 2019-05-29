@@ -1,5 +1,13 @@
 $(function(){
+    
+      $("html").niceScroll();
  
+      $(".loading-screen").css("display","none");
+      $("body").css("overflow","none");
+    
+      
+    
+    
     // include navbar and footer
          $("#includeNavbar").load("include.html #navCon");
          $("#includeFooter").load("include.html #footerCon");
@@ -38,17 +46,17 @@ $(function(){
         
         // articles section content animation on scroll animation
         
-        if($(this).scrollTop() > $(".articles-section").offset().top-100){
+        if($(this).scrollTop() >= $(".articles-section").offset().top-100){
             
             $(".articles-section .container").css({
-                "-webkit-transform":"translateX(50px)",
-                "-moz-transform":"translateX(50px)",
-                "-o-transform":"translateX(50px)",
-                "transform":"translateX(50px)",
+                "-webkit-transform":"translateX(0)",
+                "-moz-transform":"translateX(0)",
+                "-o-transform":"translateX(0)",
+                "transform":"translateX(0)",
                 
                 "transition" :".8s"
                 
-              }).promise().done(function(){
+              })/*.promise().done(function(){
                 $(".articles-section .container").delay(900).css({
                 "-webkit-transform":"translateX(0)",
                 "-moz-transform":"translateX(0)",
@@ -57,7 +65,7 @@ $(function(){
                    
                 "transition" :".8s"
               });
-                 });
+                 })*/;
         }
         
        

@@ -22,6 +22,7 @@
      -moz-background-size: cover;
      -o-background-size: cover;
              background-size: cover; 
+    background-attachment: fixed;
 }
 .all-articles-show .all-articles-content .container{
     padding: 50px 0;
@@ -38,11 +39,7 @@
     padding-top: 90px;
     height: auto;
      background-image: url(../images/imgs/bg30-Ar1web.gif);
-    background-repeat: no-repeat;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
+     
 }
 .all-Works-show .container{
      
@@ -77,12 +74,7 @@
      padding-top: 98px;
     padding-bottom: 50px;
     background-image: url(../images/imgs/bg30-Ar1web.gif);
-     background-repeat: no-repeat;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
-    
+   
     
 }
 .one-article-section .container{
@@ -115,3 +107,48 @@
     line-height: 1.7;
     
 }
+/* start one work show */
+.app-show{
+      height: 400px;
+      background-color: #FFF;      
+ }
+.app-show .app-image{
+                
+   height: 283px;
+   width: 366px;
+             
+   -webkit-transform: translateX(-300px) rotate(-90deg);
+   -moz-transform: translateX(-300px) rotate(-90deg);
+   -o-transform: translateX(-300px) rotate(-90deg);
+               transform: translateX(-300px) rotate(-90deg);
+                
+}
+.app-show .app-image img{
+    
+  height: 100%;
+  width: 100%;
+}
+.work-details-section .details-content{
+    
+    padding: 30px 0;
+       min-height: 150px;
+      background-image: url(../images/imgs/details-bg.png);
+      background-repeat: no-repeat;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+             background-size: cover; 
+    
+}
+.work-details-section .details{
+    
+    color: #FFF;
+    font-size: 14px;
+}
+.app-show .breadcrumb li:before,
+.work-details-section .breadcrumb li:before {
+    
+    font-size: 30px;
+    
+}
+/* end one work */

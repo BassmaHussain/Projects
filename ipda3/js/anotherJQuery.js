@@ -34,4 +34,16 @@ $(function(){
                 "transition" :".8s"
               });
                });  
+    
+    
+    $(".app-show .app-image").css({
+        
+                "-webkit-transform":"translateX(0) rotate(0)",
+                "-moz-transform":"translateX(0) rotate(0)",
+                "-o-transform":"translateX(0) rotate(0)",
+                "transform":"translateX(0) rotate(0)",
+                
+                "transition" :"1.3s"
+        
+    });
 });

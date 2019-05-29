@@ -1,6 +1,7 @@
 body{
     
    font-family: 'Cairo', sans-serif;
+    overflow: hidden;
 }
 .border-after:after{
     display: block;
@@ -17,11 +18,14 @@ a:hover{
 .navbar{
     position: absolute;
     z-index: 9999;
-    width: 100%;
-    background-color: #b2b3b53d;
+    width: 100%; 
+    background-color: #9595989c;
     border: none;
     border-radius: 0;
     
+}
+.navbar-default .navbar-nav > li > a{
+    color: #FFF;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > .active > a,
@@ -30,6 +34,7 @@ a:hover{
     color: #0a0a0a;
     background-color: transparent;
     font-weight: bold;
+    
     
 }
 .navbar-default .navbar-toggle .icon-bar{
@@ -254,11 +259,7 @@ header .container .header-head{
 
 .our-works .our-works-content{
     background-image: url(../images/imgs/bg30-Ar1web.gif);
-    background-repeat: no-repeat;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-             background-size: cover;
+   
     height: auto;
     padding: 60px 0;
     margin-top: 50px;
@@ -448,6 +449,72 @@ footer ul li{
     }
 }
 /* end footer */
+/* loading page */
+
+            .loading-screen{
+                background-color: cornflowerblue;
+                height: 300px;
+                width: 100%;
+                height: 100%;
+                z-index: 20000;
+                position: absolute;
+            }
+            .loading-screen  .loading-icons{
+                width: 150px;
+                
+            }
+            .loading-screen .loading-icons ul{
+                margin-top: 100px;          
+            }
+            .loading-screen .loading-icons ul li{
+                float: left;
+                margin-left: 6px;
+                color: #FFF;
+                font-size: 9px;
+                
+                -webkit-animation:loadingAnimate 1s infinite ease-in-out;
+                        animation:loadingAnimate 1s infinite ease-in-out;
+            }
+.loading-screen .loading-icons ul .circle1{
+    -webkit-animation-delay: .04s;
+            animation-delay: .04s;
+}
+.loading-screen .loading-icons ul .circle2{
+    -webkit-animation-delay: .4s;
+            animation-delay: .4s;
+}
+.loading-screen .loading-icons ul .circle3{
+    -webkit-animation-delay: .6s;
+            animation-delay: .6s;
+}
+.loading-screen .loading-icons ul .circle4{
+    -webkit-animation-delay: .8s;
+            animation-delay: .8s;
+}
+
+@-webkit-keyframes loadingAnimate{
+    0, 25%, 50%, 75%{
+        -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+    }
+    35%{
+        -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+    }
+    
+}
+@keyframes loadingAnimate{
+    0, 25%, 50%, 75%{
+        -webkit-transform: scale3D(2, 2, 2);
+            transform: scale3D(2, 2, 2);
+    }
+    35%{
+        -webkit-transform: scale3D(0, 0, 2);
+            transform: scale3D(0, 0, 2);
+    }
+    
+}
+/* end loading page */
 
 .scroll-to-top{
     height: 50px;
