@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+         <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+         <link rel="stylesheet" type="text/css" href="./css/bootstrap-rtl.css">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+         <script type="text/javascript" src="./js/html5shiv.js"></script>   
+        <link rel="stylesheet" type="text/css" href="./css/myStyle.css">
+        <link rel="stylesheet" type="text/css" href="./css/otherPages.css">
+        <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+        <style>
+          .workSlider{
+                margin: 100px auto;
+                    transform-style: preserve-3d;
+                    height: auto;
+                    width: auto;
+
+            }
+            .workSlider > div {
+                height: auto;
+                    width: auto;
+                float: left;
+               opacity: .4;
+
+               position: relative;
+              
+            }
+            .workSlider  .first{
+               transition:all  .5s ease-in-out;
+            }
+            .workSlider  .second{
+               transition:all  .7s ease-in-out;
+            }
+            .workSlider  .third{
+               transition:all  .9s ease-in-out;
+            }
+            .workSlider  .forth{
+               transition:all  1.1s ease-in-out;
+            }
+            .workSlider > div img{
+                width: 100px;
+                height: 200px;
+                margin: 0 !important;
+               
+            }
+            .workSlider > div:not(.show){
+                display: none;
+            }
+
+            .workSlider .default {
+              opacity: 1;
+              z-index: 999;
+              position: relative;
+              transform: scale(1.5);
+              
+            }
+     
+     
+        @keyframes loadingAnimate{
+              0, 25%, 50%, 75%{
+                  -webkit-transform: scale(1.5);
+                      transform: scale(1.5);
+              }
+            100%{
+                  -webkit-transform: scale(1.5);
+                      transform: scale(1.5);
+              }
+
+    }
+  
+            
+        </style>
+    </head>
+    
+    <body>
+    
+     
+        <section>
+          <div class="container workSlider">
+
+                  <div class="img show first"><img src="./images/imgs/slide-one.png" /></div>
+            <div class="img show  default second"><img src="./images/imgs/Slider-two1.png" /></div>
+            <div class="img show third"><img src="./images/imgs/slider-three.png" /></div>
+            <div class="img show forth" ><img src="./images/imgs/Slider-four.png" /></div>
+            
+          </div>
+        </section>
+        
+        
+      
+        
+    
+        
+      
+         
+         <!-- scripts --> 
+   <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+        
+<script type="text/javascript" src="./js/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="./js/anotherJQuery.js"></script>      
+<script type="text/javascript" src="./js/myJQuery.js"></script>
+    </body>
+</html>

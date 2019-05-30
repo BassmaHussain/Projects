@@ -174,7 +174,7 @@ header .container .header-head{
     margin-top: 50px;
     color: #484646;
     position: absolute;
-    width:600px;
+  
     line-height: 2;
 
      -webkit-transform: translateX(-600px);
@@ -183,12 +183,15 @@ header .container .header-head{
       transform: translateX(-600px);
 }
 @media(max-width:990px){
+    .about-us{
+        margin-bottom: 50px;
+    }
     .about-us .row{
         text-align: center;
     }
     .about-us .about-us-desc{
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 /* end about us section */
@@ -271,6 +274,7 @@ header .container .header-head{
     border-radius: 19px;
     width: 320px;
     margin-bottom: 40px;
+    cursor: pointer;
     
     -webkit-box-shadow: 3px 7px 20px #a9a6a6, -3px 0 17px #a9a6a6;
     -moz-box-shadow: 3px 7px 20px #a9a6a6, -3px 0 17px #a9a6a6;
@@ -444,8 +448,9 @@ footer ul li{
 }
 @media(max-width:768px){
 
-    footer{
-        text-align: center;
+   
+    footer .address h3{
+       margin-right: 10px;
     }
 }
 /* end footer */

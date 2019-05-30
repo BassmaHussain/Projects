@@ -46,4 +46,45 @@ $(function(){
                 "transition" :"1.3s"
         
     });
+
+///////////////////////////////////////////////////
+      
+
+      $(document).keydown(function(event) {
+                switch (event.keyCode) {
+                    case 37:{
+                         $(".workSlider .default").removeClass("default").prev(".img").addClass("default").prevAll().
+                        css({
+                            "transform":"scale(1.5)",
+                            
+                        }).nextAll().
+                        css({
+                            "transform":"scale3D(0,0,1)"
+                            
+                        });
+
+                         
+                       
+                      }
+                    break;
+                    
+                    case 39: {
+                        
+    
+                         $(".workSlider .default").removeClass("default").next(".img").addClass("default").nextAll().
+                        css({
+                            "transform":"scale(1.5)"
+                            
+                        }).nextAll().
+                        css({
+                            "transform":"scale3D(0,0,1)"
+                            
+                        });
+                    }
+                     break;
+                    
+                }
+            });
+
+
 });

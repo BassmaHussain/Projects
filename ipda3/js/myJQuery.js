@@ -31,7 +31,7 @@ $(function(){
         
         // about us section image && desc text animation on scroll animation
         
-        if($(this).scrollTop() > 500){
+        if($(this).scrollTop() >= 500){
             
             $(".about-us .about-us-img, .about-us .about-us-desc").css({
                 "-webkit-transform":"translateX(0)",
@@ -147,7 +147,23 @@ $(function(){
         
     });
     
-    
-   
-   
+    // on click work 
+
+var desc, title;
+$(".all-Works-show .work, .our-works .our-works-content .work").click(function(){
+
+     desc=$(this).find(".workDesc").text();
+     title=$(this).find("h3").text();
+
+     localStorage.setItem("workDesc",desc);
+     localStorage.setItem("workTitle",title);
+
+
+      location.href="one-work.html";
+});
+
+      $(".app-show .breadcrumb li").text(localStorage.getItem("workTitle"));
+      $(".work-details-section .details-content .container p").text(localStorage.getItem("workDesc"));
+
+ 
 });

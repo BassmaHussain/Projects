@@ -82,7 +82,7 @@
 }
 .one-article-section .content{
     background-color: #FFF;
-    width: 657px;
+    width: 75%;
     min-height: 670px;
     border-radius: 20px;
     box-shadow: 2px 2px 10px #6b6565;
@@ -106,6 +106,9 @@
     font-size: 18px;
     line-height: 1.7;
     
+}
+@media(max-width:990px){
+   
 }
 /* start one work show */
 .app-show{
